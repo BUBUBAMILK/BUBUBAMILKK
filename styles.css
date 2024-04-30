@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container {
+  background-color: #f8c169;
+  width: 100%;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.badan {
+    padding-top: 80px;
+    background-color: #f8e0b478; /* Ubah warna latar belakang dengan nilai RGBA */
+    overflow-x: hidden; /* Atur overflow-x ke hidden untuk menghindari horizontal scrollbar */
+}
+
+.navbar {
+  margin-right: 25px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  background-color: #f9cf66;
+  box-shadow: 0 2px 2px rgba(232, 160, 45, 0.89);
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #ffbf47;
+}
+
+.logo img {
+  height: 85px;
+  width: auto;
+  margin-left: 20px;
+}
+
+h3 {
+  font-family: cursive;
+  color: #fbf9f6;
+  font-size: 16px;
+  text-align: center;
+  width: 80%;
+
+  margin: 20px auto;
+  background-color: rgba(251, 210, 98, 0.771);
+  border-radius: 8px;
+  padding: 11px;
+  border-color: solid 5px #f9ba54;
+  box-shadow: 0 2px 2px rgba(232, 160, 45, 0.89);
+  padding-bottom: 20px;
+}
+
+.boba img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 25px;
+  border: solid 5px #f1b657;
+  margin: 20px 115px auto;
+    margin: 20px auto; /* Mengatur margin atas dan bawah ke auto dan margin kiri dan kanan menjadi auto membuatnya berada di tengah secara horizontal */
+    display: flex;
+    justify-content: center; /* Mengatur konten untuk berada di tengah secara horizontal */
+  }
+  
+
+.produk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.produk img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 300px;
+  border: solid 5px #f1b657;
+  margin-top: -360px;
+  box-shadow: 0 2px 2px rgba(232, 160, 45, 0.89);
+}
+
+span {
+  font-family: cursive;
+  font-size: 18px;
+  color: #f09605;
+}
+
+.teks4 {
+  margin-top: -360px;
+}
+
+h4 {
+  color: white;
+  background-color: #f8c169;
+  padding: 10px;
+  margin: auto;
+  border-color: #f09605;
+  border-radius: 25px;
+  width: auto;
+  max-width: 170px;
+  text-align: center;
+  font-family: cursive ;
+  text-decoration: none;
+}
