@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .navbar-container {
@@ -19,9 +21,11 @@
 }
 
 .badan {
-    padding-top: 80px;
-    background-color: #f8e0b478; /* Ubah warna latar belakang dengan nilai RGBA */
-    overflow-x: hidden; /* Atur overflow-x ke hidden untuk menghindari horizontal scrollbar */
+  padding-top: 80px;
+  background-color: #f8e0b478;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -49,7 +53,6 @@
   border-radius: 5px;
   background-color: #f9cf66;
   box-shadow: 0 2px 2px rgba(232, 160, 45, 0.89);
-  transition: background-color 0.3s ease;
 }
 
 .navbar ul li a:hover {
@@ -68,7 +71,6 @@ h3 {
   font-size: 16px;
   text-align: center;
   width: 80%;
-
   margin: 20px auto;
   background-color: rgba(251, 210, 98, 0.771);
   border-radius: 8px;
@@ -76,6 +78,13 @@ h3 {
   border-color: solid 5px #f9ba54;
   box-shadow: 0 2px 2px rgba(232, 160, 45, 0.89);
   padding-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+h3:hover {
+  background-color: #f8c168;
+ 
 }
 
 .boba img {
@@ -84,32 +93,36 @@ h3 {
   border-radius: 25px;
   border: solid 5px #f1b657;
   margin: 20px 115px auto;
-    margin: 20px auto; /* Mengatur margin atas dan bawah ke auto dan margin kiri dan kanan menjadi auto membuatnya berada di tengah secara horizontal */
-    display: flex;
-    justify-content: center; /* Mengatur konten untuk berada di tengah secara horizontal */
-  }
-  
+  margin: 20px auto; 
+  display: flex;
+  justify-content: center; 
+}
+
 
 .produk {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
 }
 
+
 .produk img {
-  max-width: 100%;
+  max-width: 300%;
   height: auto;
   border-radius: 300px;
   border: solid 5px #f1b657;
   margin-top: -360px;
   box-shadow: 0 2px 2px rgba(232, 160, 45, 0.89);
+  transition: transform 0.3s ease; 
 }
 
+
 span {
-  font-family: cursive;
   font-size: 18px;
   color: #f09605;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .teks4 {
@@ -124,8 +137,56 @@ h4 {
   border-color: #f09605;
   border-radius: 25px;
   width: auto;
-  max-width: 170px;
+  max-width: 240px;
   text-align: center;
-  font-family: cursive ;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+h4:hover {
+  background-color: #f8ae38;
+}
+
+a {
+  text-decoration: none;
+}
+
+.maps img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 500px;
+  border: solid 5px #f1b657;
+  margin: 20px 115px auto;
+  margin: 20px auto; 
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease; 
+}
+
+@media screen and (min-width: 768px) { 
+  .maps img {
+    max-width: 30%;
+  }
+}
+
+.boba img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 25px;
+  border: solid 5px #f1b657;
+  margin: 20px auto; 
+  display: block;
+  transition: transform 0.3s ease; 
+}
+
+.boba img:hover,
+.produk img:hover,
+.maps img:hover {
+  transform: scale(1.1); 
+}
+
+@media screen and (min-width: 768px) { 
+  .maps img {
+    max-width: 30%;
+  }
 }
